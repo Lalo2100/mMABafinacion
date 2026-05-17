@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correa Alejandro | Afinación Profesional de Pianos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background:
+      linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.92)),
+      url('https://images.unsplash.com/photo-1514119412350-e174d90d280e?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background:
+      linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+      url('flyer-pianos.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+      border-bottom: 2px solid #c79b35;
+    }
+
+    .hero-overlay {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0,0,0,0.45);
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid rgba(199,155,53,0.5);
+      box-shadow: 0 0 25px rgba(199,155,53,0.3);
+    }
+
+    h1 {
+      color: #d4a640;
+      font-size: 3rem;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #d4a640;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #c79b35;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(199,155,53,0.4);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #c79b35;
+    }
+
+    .counter {
+      text-align: center;
+      font-size: 2rem;
+      color: #d4a640;
+      margin-top: 20px;
+    }
+
+    .contact {
+      background: #111;
+      border-radius: 12px;
+      padding: 30px;
+      border: 1px solid #c79b35;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input,
+    textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #c79b35;
+      color: #000;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e6be65;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social a {
+      color: #d4a640;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #333;
+      color: #999;
+      margin-top: 50px;
+    }
+
+    @media(max-width:768px){
+      h1{
+        font-size:2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero-overlay">
+    <h1>M.A.B Afinación de Pianos</h1>
+    <p>Correa Alejandro | Afinación Profesional de Pianos</p>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Afinación</h3>
+      <p>Precisión y estabilidad para cada nota de tu instrumento.</p>
+    </div>
+
+    <div class="card">
+      <h3>Regulación</h3>
+      <p>Mejora en la respuesta y sensibilidad del piano.</p>
+    </div>
+
+    <div class="card">
+      <h3>Diagnóstico</h3>
+      <p>Evaluación técnica completa del estado del instrumento.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Trabajos Realizados</h2>
+
+  <div class="gallery">
+    <img src="trabajo1.jpg" alt="Trabajo realizado">
+    <img src="trabajo2.jpg" alt="Trabajo realizado">
+
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Visitas al Sitio</h2>
+  <div class="counter">
+    <span id="visit-counter">0</span> visitas
+  </div>
+</section>
+
+<section class="section">
+  <h2>Contacto</h2>
+
+  <div class="contact">
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea rows="6" placeholder="Escribime tu consulta..."></textarea>
+      <button type="submit">Enviar Consulta</button>
+    </form>
+
+    <div class="social">
+      <p><strong>WhatsApp:</strong> 3564 376038</p>
+
+      <a href="https://www.facebook.com/profile.php?id=61588015000820" target="_blank">Facebook</a>
+
+      <a href="https://www.instagram.com/alejandroivancorrea202/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Correa Alejandro | Afinación Profesional de Pianos
+</footer>
+
+<script>
+  let visits = localStorage.getItem('visits');
+
+  if(visits === null){
+    visits = 0;
+  }
+
+  visits++;
+
+  localStorage.setItem('visits', visits);
+
+  document.getElementById('visit-counter').innerText = visits;
+</script>
+
+</body>
+</html>
